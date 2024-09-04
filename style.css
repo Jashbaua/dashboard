@@ -23,7 +23,6 @@ ol[role="list"], ul[role="list"] {
 p, h1, h2, h3, h4, h5, h6, input, button, textarea, select {
   font: inherit;
   overflow-wrap: break-word;
-  hyphens: auto;
 }
 
 p {
@@ -40,6 +39,7 @@ img, picture, video, canvas, svg {
 body{
     display: grid;
     grid-template-columns:225px 1fr;
+    grid-template-rows: auto 1fr;
     font-family: "Roboto",sans-serif;
 }
 .main-content{
@@ -57,6 +57,7 @@ body{
     padding-top: 15px;
     column-gap: 7px;
     row-gap: 7px;
+    grid-row: 1/-1;
 }
 .sidebar>img{
     grid-column: 1/2;
@@ -79,6 +80,7 @@ body{
     align-content: center;
 }
 .header{
+    position: relative;
     padding: 10px 90px 0px 40px;
     font-weight: 600;
     font-size: 1.2rem;
@@ -145,4 +147,41 @@ img[alt='notifications']{
     padding: 5px;
     width: 130px;
     color: white;
+}
+.main-content{
+    display:grid;
+    grid-template-columns: 1fr 350px;
+    background-color: rgba(225,232,240,255);
+    padding: 30px 0px 0px 0px;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 4px rgba(205,210,214,255);
+    padding: 30px 25px;
+}
+.card p{
+    color: rgba(177,177,177,255);
+}
+.main-content>div>h1{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.announcements .card{
+    display: grid;
+    grid-template-rows: 100px 1px 100px 1px 100px;
+    width: 300px;
+    font-weight: 600;
+    align-items: center;
+    margin-top: 10px;
+}
+.announcements .card p{
+    font-size: small
+}
+.announcements .card div:nth-child(2n+2){
+    height: 1px;
+    background-color: rgba(225,232,240,255);
+}
+.trending{
+    grid-column: 2/3;
 }
