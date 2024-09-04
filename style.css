@@ -49,7 +49,7 @@ body{
     background-color: rgba(24,146,211,255);
     color: white;
     height: max(min-content,100vh);
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template: 30px 40px repeat(6,30px) 40px repeat(3,30px)/40px 1fr;
     align-items: center;
@@ -184,4 +184,22 @@ img[alt='notifications']{
 }
 .trending{
     grid-column: 2/3;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.trending .card{
+    width: 300px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+.trending img{
+    display: inline;
+    width: 3rem;
+}
+.trending .card>div{
+    display: flex;
+    gap: 15px;
 }
