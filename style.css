@@ -75,6 +75,74 @@ body{
 .sidebar>div{
     grid-column: 2/3;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.1rem;
     align-content: center;
+}
+.header{
+    padding: 10px 90px 0px 40px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    box-shadow: 1px 3px 5px rgba(205,210,214,255);
+    height: 170px;
+}
+.header1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+input{
+    flex-grow: 1;
+    border-radius: 20px;
+    border-style: none;
+    background-color: rgba(225,232,240,255);
+    height: 30px;
+    padding: 13px;
+    font-size: 0.8rem;
+}
+input:active,input:focus{
+    border: solid;
+    border-color: rgb(228, 228, 228);
+    outline: none;
+}
+label{
+    display: flex;  
+}
+.header1 img{
+    width: 1.3rem;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+img[alt='notifications']{
+    margin-left: 100px;
+}
+.header1 img[alt='profile1']{
+    width: 3.5rem;
+}
+.header2{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    gap: 20px;
+}
+.header2 img{
+    width: 5rem;
+}
+.greeting{
+    margin-right: auto;
+}
+.greeting>p:first-child{
+    font-size: 0.9rem;
+}
+.greeting>p:last-child{
+    font-size: 1.7rem;
+    padding: 0px;
+    white-space: nowrap;
+}
+.header2 button{
+    background-color: rgba(24,146,211,255);
+    border: none;
+    border-radius: 30px;
+    padding: 5px;
+    width: 130px;
+    color: white;
 }
