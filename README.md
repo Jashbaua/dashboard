@@ -13,7 +13,7 @@ A simple admin dashboard interface built using HTML and CSS (primarily CSS Grid)
 
 ## Demo
 
-<img width="300" alt="dashboard" src="https://github.com/user-attachments/assets/4637064e-d1b4-45bf-9d36-c967e2b2cedc" />
+<img width="600" alt="dashboard" src="https://github.com/user-attachments/assets/4637064e-d1b4-45bf-9d36-c967e2b2cedc" />
 
 > **Live Preview:**  
 > https://jashbaua.github.io/dashboard/
